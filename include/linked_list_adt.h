@@ -23,10 +23,10 @@ public:
         return *this;
     }
     T operator*(){ return current->info; }
-    bool operator==(const LinkedListIterator<T>& rhs) {
+    bool operator==(const LinkedListIterator<T>& rhs) const {
         return current == rhs.current;
     }
-    bool operator!=(const LinkedListIterator<T>& rhs) {
+    bool operator!=(const LinkedListIterator<T>& rhs) const {
         return current != rhs.current;
     }
 private:
